@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="ed1425df-13eb-485d-9b6b-8a217a9ec815" ChangeDateTime="05/28/2022 11:43:39">
+    <Property Name="ElementName" Value="[qless].[CardUsageType].[Name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[qless].[CardUsageType]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CardId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bf41555c-ab9c-4fc6-b72c-37cc1457ca64" ChangeDateTime="05/28/2022 11:43:47">
+    <Property Name="ElementName" Value="[qless].[CardUsageType].[CardId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[qless].[CardUsageType]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d6f2b731-3abf-4e2e-bc12-db5e54752081" ChangeDateTime="05/28/2022 11:51:42">
+    <Property Name="ElementName" Value="[qless].[CommuteHistory].[CardI]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[qless].[CommuteHistory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CardId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f9c08408-9acc-45e9-8719-40902e5fc24b" ChangeDateTime="05/28/2022 11:53:52">
+    <Property Name="ElementName" Value="[qless].[Card].[CardType]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[qless].[Card]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CardTypeId" />
+  </Operation>
+</Operations>

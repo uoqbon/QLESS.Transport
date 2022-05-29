@@ -1,0 +1,11 @@
+﻿CREATE TABLE [QLESS].[Card]
+(
+	[Id] BIGINT NOT NULL PRIMARY KEY IDENTITY, 
+    [CardTypeId] SMALLINT NOT NULL,     
+    [Load] DECIMAL NOT NULL, 
+    [DiscountReferenceId] VARCHAR(20) NULL, 
+    [CreatedDate] DATETIME2(0) NOT NULL
+)
+GO
+ALTER TABLE [QLESS].[Card] ADD CONSTRAINT [FK_Card_CardTypeId] FOREIGN KEY ([CardTypeId]) REFERENCES [QLESS].[CardType] ([Id])
+GO

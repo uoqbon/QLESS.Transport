@@ -2,7 +2,6 @@
 using QLESS.Transport.Business.Contracts.Managers;
 using QLESS.Transport.Business.Contracts.Services;
 using QLESS.Transport.Business.Managers;
-using QLESS.Transport.Contracts.Constants;
 using QLESS.Transport.Contracts.DTO;
 using Shouldly;
 using System;
@@ -12,7 +11,7 @@ using Xunit;
 
 namespace QLESS.Transport.Business.Test.Managers
 {
-    public class CommuteManagerTest : IDisposable
+    public class CommuteManagerTest
     {
         private Mock<ICardService> _cardService;
         private Mock<ICommuteHistoryService> _commuteHistoryService;
@@ -202,7 +201,7 @@ namespace QLESS.Transport.Business.Test.Managers
 
         private static object[] CreateArriveAsyncTheories(CardDTO cardInfo, CommuteHistoryDTO historyEntry, int addHistoryCount, ArrivalResponseDTO expected) =>
             new object[] { cardInfo, historyEntry, addHistoryCount, expected };
-
+        
         [Theory, MemberData(nameof(DepartAsyncTheories))]
         public async Task DepartAsync_Returns_Expected(CardDTO cardInfo, CommuteHistoryDTO historyEntry, int addHistoryCount, DepartureResponseDTO expected)
         {
@@ -231,12 +230,6 @@ namespace QLESS.Transport.Business.Test.Managers
             _commuteHistoryService.Verify(s => s.AddAsync(It.IsAny<long>(), It.IsAny<int>(), It.IsAny<bool>()), Times.Exactly(addHistoryCount));
 
             actual.ShouldBeEquivalentTo(expected);
-        }
-
-        public void Dispose()
-        {
-            _cardService = null;
-            _commuteHistoryService = null;
         }
     }
 }

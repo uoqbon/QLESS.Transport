@@ -4,7 +4,6 @@ using QLESS.Transport.Business.Contracts.Services;
 using QLESS.Transport.Contracts.Constants;
 using QLESS.Transport.Contracts.DTO;
 using System;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace QLESS.Transport.Api.Controllers
@@ -22,24 +21,36 @@ namespace QLESS.Transport.Api.Controllers
             _cardService = cardService;
         }
 
+        /// <summary>
+        /// Creates a new Transport Card
+        /// </summary>
+        /// <returns>Card Id</returns>
         [HttpPost]
         public Task<long> Create()
         {
             return CreateAsync(CardTypes.Regular, null);
         }
 
+        /// <summary>
+        /// Creates a new Discounted Transport Card
+        /// </summary>
+        /// <param name="discountReferenceId">Discount Reference Id Number</param>
+        /// <returns>Card Id</returns>
+        /// <exception cref="ArgumentException"></exception>
         [HttpPost("CreateDiscounted/{discountReferenceId}")]
         public Task<long> Create(string discountReferenceId)
         {
-            var regex = @"^(?=(.{14}|.{12})$)[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+){2}$";
-            var match = Regex.Match(discountReferenceId, regex, RegexOptions.IgnoreCase);
-
-            if (!match.Success)
+            if (!_cardTransactionManager.ValidateDiscountReferenceId(discountReferenceId))
                 throw new ArgumentException("Invalid Discount Reference Id");
 
             return CreateAsync(CardTypes.Discounted, discountReferenceId);
         }        
 
+        /// <summary>
+        /// Gets Transport Card Information
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Transport Card</returns>
         [HttpGet("{id}")]
         public Task<CardDTO> Get(long id)
         {

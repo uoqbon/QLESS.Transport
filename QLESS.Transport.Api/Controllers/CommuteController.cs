@@ -19,18 +19,35 @@ namespace QLESS.Transport.Api.Controllers
             _commuteHistoryService = commuteHistoryService;
         }
 
+        /// <summary>
+        /// Use Transport Card to enter a train station
+        /// </summary>
+        /// <param name="cardId">Card Id</param>
+        /// <param name="stationId">Train Station Id</param>
+        /// <returns>Departure Information</returns>
         [HttpPost("Depart/{cardId}/{stationId}")]
         public Task<DepartureResponseDTO> Depart(long cardId, int stationId)
         {
             return _commuteManager.DepartAsync(cardId, stationId);
         }
 
+        /// <summary>
+        /// Use Transport Card to exit a train station
+        /// </summary>
+        /// <param name="cardId">Card Id</param>
+        /// <param name="stationId">Train Station Id</param>
+        /// <returns>Arrival Information</returns>
         [HttpPost("Arrive/{cardId}/{stationId}")]
         public Task<ArrivalResponseDTO> Arrive(long cardId, int stationId)
         {
             return _commuteManager.ArriveAsync(cardId, stationId);
         }
 
+        /// <summary>
+        /// Gets last commute information from Transport Card
+        /// </summary>
+        /// <param name="cardId">Card Id</param>
+        /// <returns>Commute History Information</returns>
         [HttpGet("GetLastHistoryEntry/{cardId}")]
         public Task<CommuteHistoryDTO> GetLastHistoryEntry(long cardId)
         {

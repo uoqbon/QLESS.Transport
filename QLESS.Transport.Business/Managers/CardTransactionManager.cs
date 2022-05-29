@@ -3,6 +3,7 @@ using QLESS.Transport.Business.Contracts.Services;
 using QLESS.Transport.Contracts.Constants;
 using QLESS.Transport.Contracts.DTO;
 using System;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace QLESS.Transport.Business.Managers
@@ -16,6 +17,14 @@ namespace QLESS.Transport.Business.Managers
         {
             _cardService = cardService;
             _cardTypeService = cardTypeService;           
+        }
+
+        public bool ValidateDiscountReferenceId(string discountReferenceId)
+        {
+            var regex = RegExp.DiscountReferenceId;
+            var match = Regex.Match(discountReferenceId, regex, RegexOptions.IgnoreCase);
+
+            return match.Success;
         }
 
         public async Task<long> CreateNewCardAsync(CardTypes cardType, string discountReferenceId)

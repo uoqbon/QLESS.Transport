@@ -3,7 +3,7 @@ using QLESS.Transport.Business.Contracts.Managers;
 using QLESS.Transport.Business.Contracts.Services;
 using QLESS.Transport.Business.Managers;
 using QLESS.Transport.Business.Services;
-using QLESS.Transport.Domain.Components;
+using QLESS.Transport.Data.Components;
 
 namespace QLESS.Transport.Business.Components
 {

@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using QLESS.Transport.Business.Contracts.Managers;
 using QLESS.Transport.Business.Contracts.Services;
-using QLESS.Transport.Contracts.Constants;
-using QLESS.Transport.Contracts.DTO;
+using QLESS.Transport.Core.Constants;
+using QLESS.Transport.Core.DTO;
 using System;
 using System.Threading.Tasks;
 

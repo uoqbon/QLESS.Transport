@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using QLESS.Transport.Domain.Contracts;
-using QLESS.Transport.Domain.Entities;
+using QLESS.Transport.Data.Contracts;
+using QLESS.Transport.Data.Entities;
 
-namespace QLESS.Transport.Domain
+namespace QLESS.Transport.Data
 {
     public class QLESSTransportContext : DbContext, IQLESSTransportContext
     {

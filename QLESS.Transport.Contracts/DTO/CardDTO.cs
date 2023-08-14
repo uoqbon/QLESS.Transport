@@ -1,7 +1,7 @@
-﻿using QLESS.Transport.Contracts.Constants;
+﻿using QLESS.Transport.Core.Constants;
 using System;
 
-namespace QLESS.Transport.Contracts.DTO
+namespace QLESS.Transport.Core.DTO
 {
     public class CardDTO
     {

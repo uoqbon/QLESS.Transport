@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace QLESS.Transport.Domain.Entities
+namespace QLESS.Transport.Data.Entities
 {
     public class Card
     {

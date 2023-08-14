@@ -1,5 +1,5 @@
 ﻿
-namespace QLESS.Transport.Contracts.Constants
+namespace QLESS.Transport.Core.Constants
 {
     public enum CardTypes : short
     {

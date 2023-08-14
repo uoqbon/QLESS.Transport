@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
-using QLESS.Transport.Contracts.DTO;
-using QLESS.Transport.Domain.Contracts;
-using QLESS.Transport.Domain.Contracts.Repositories;
-using QLESS.Transport.Domain.Entities;
+using QLESS.Transport.Core.DTO;
+using QLESS.Transport.Data.Contracts;
+using QLESS.Transport.Data.Contracts.Repositories;
+using QLESS.Transport.Data.Entities;
 using System.Threading.Tasks;
 
-namespace QLESS.Transport.Domain.Repositories
+namespace QLESS.Transport.Data.Repositories
 {
     public class CardRepository : ICardRepository
     {

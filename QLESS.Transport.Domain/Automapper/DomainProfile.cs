@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using QLESS.Transport.Contracts.DTO;
-using QLESS.Transport.Domain.Entities;
+using QLESS.Transport.Core.DTO;
+using QLESS.Transport.Data.Entities;
 
-namespace QLESS.Transport.Domain.Automapper
+namespace QLESS.Transport.Data.Automapper
 {
     public class DomainProfile : Profile
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace QLESS.Transport.Contracts.DTO
+namespace QLESS.Transport.Core.DTO
 {
     public class CommuteHistoryDTO
     {

@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
-using QLESS.Transport.Domain.Entities;
+using QLESS.Transport.Data.Entities;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace QLESS.Transport.Domain.Contracts
+namespace QLESS.Transport.Data.Contracts
 {
     public interface IQLESSTransportContext
     {

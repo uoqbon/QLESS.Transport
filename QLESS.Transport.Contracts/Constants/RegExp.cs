@@ -1,4 +1,4 @@
-﻿namespace QLESS.Transport.Contracts.Constants
+﻿namespace QLESS.Transport.Core.Constants
 {
     public static class RegExp
     {

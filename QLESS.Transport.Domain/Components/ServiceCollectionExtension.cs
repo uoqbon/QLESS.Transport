@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using QLESS.Transport.Domain.Automapper;
-using QLESS.Transport.Domain.Contracts;
-using QLESS.Transport.Domain.Contracts.Repositories;
-using QLESS.Transport.Domain.Repositories;
+using QLESS.Transport.Data.Automapper;
+using QLESS.Transport.Data.Contracts;
+using QLESS.Transport.Data.Contracts.Repositories;
+using QLESS.Transport.Data.Repositories;
 
-namespace QLESS.Transport.Domain.Components
+namespace QLESS.Transport.Data.Components
 {
     public static class ServiceCollectionExtension
     {

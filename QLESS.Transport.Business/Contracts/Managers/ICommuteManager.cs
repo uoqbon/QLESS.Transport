@@ -1,4 +1,4 @@
-﻿using QLESS.Transport.Contracts.DTO;
+﻿using QLESS.Transport.Core.DTO;
 using System.Threading.Tasks;
 
 namespace QLESS.Transport.Business.Contracts.Managers

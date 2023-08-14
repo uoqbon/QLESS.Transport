@@ -1,6 +1,6 @@
 ﻿using QLESS.Transport.Business.Contracts.Services;
-using QLESS.Transport.Contracts.DTO;
-using QLESS.Transport.Domain.Contracts.Repositories;
+using QLESS.Transport.Core.DTO;
+using QLESS.Transport.Data.Contracts.Repositories;
 using System.Threading.Tasks;
 
 namespace QLESS.Transport.Business.Services

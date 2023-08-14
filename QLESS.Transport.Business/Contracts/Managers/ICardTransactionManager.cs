@@ -1,4 +1,4 @@
-﻿using QLESS.Transport.Contracts.Constants;
+﻿using QLESS.Transport.Core.Constants;
 using System.Threading.Tasks;
 
 namespace QLESS.Transport.Business.Contracts.Managers

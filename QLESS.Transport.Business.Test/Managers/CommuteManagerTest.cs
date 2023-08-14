@@ -2,7 +2,7 @@
 using QLESS.Transport.Business.Contracts.Managers;
 using QLESS.Transport.Business.Contracts.Services;
 using QLESS.Transport.Business.Managers;
-using QLESS.Transport.Contracts.DTO;
+using QLESS.Transport.Core.DTO;
 using Shouldly;
 using System;
 using System.Collections.Generic;

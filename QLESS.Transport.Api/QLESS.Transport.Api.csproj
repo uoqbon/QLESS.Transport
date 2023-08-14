@@ -14,7 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\QLESS.Transport.Business\QLESS.Transport.Business.csproj" />
-    <ProjectReference Include="..\QLESS.Transport.Contracts\QLESS.Transport.Core.csproj" />
+    <ProjectReference Include="..\QLESS.Transport.Core\QLESS.Transport.Core.csproj" />
   </ItemGroup>
 
 

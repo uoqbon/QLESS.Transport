@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QLESS.Transport.Api", "QLES
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QLESS.Transport.Business", "QLESS.Transport.Business\QLESS.Transport.Business.csproj", "{A663887F-987A-4345-ACAC-24557C686535}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QLESS.Transport.Data", "QLESS.Transport.Domain\QLESS.Transport.Data.csproj", "{7E91B059-762C-4E69-A28B-BC317C6D6687}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QLESS.Transport.Data", "QLESS.Transport.Data\QLESS.Transport.Data.csproj", "{7E91B059-762C-4E69-A28B-BC317C6D6687}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QLESS.Transport.Core", "QLESS.Transport.Contracts\QLESS.Transport.Core.csproj", "{52D67A18-277A-477A-AB18-DBBA074AB379}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QLESS.Transport.Core", "QLESS.Transport.Core\QLESS.Transport.Core.csproj", "{52D67A18-277A-477A-AB18-DBBA074AB379}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "QLESS.Transport.Database", "QLESS.Transport.Database\QLESS.Transport.Database.sqlproj", "{90AA55DF-DA12-4585-9785-4D5A60852525}"
 EndProject

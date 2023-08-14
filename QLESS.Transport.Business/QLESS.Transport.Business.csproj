@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\QLESS.Transport.Domain\QLESS.Transport.Data.csproj" />
+    <ProjectReference Include="..\QLESS.Transport.Data\QLESS.Transport.Data.csproj" />
   </ItemGroup>
 
 </Project>
